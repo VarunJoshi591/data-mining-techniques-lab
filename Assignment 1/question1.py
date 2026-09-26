@@ -1,0 +1,5 @@
+import numpy as np
+print("Numpy version:", np.__version__)
+np.show_config()
+
+
