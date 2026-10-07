@@ -3,6 +3,6 @@
 
 import numpy as np 
 
-arr = np.random.rand(15)
+arr = np.random.randn(15)
 
 print(arr)
