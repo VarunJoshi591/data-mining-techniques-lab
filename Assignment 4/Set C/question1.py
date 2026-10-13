@@ -30,4 +30,4 @@ y_pred = lr.predict(X_test)
 
 # Evaluate model
 print("Mean Squared Error:", mean_squared_error(y_test, y_pred))
-print("R^2 Score:", r2_score(y_test, y_pred))
+print("R^2 Score:", r2_score(y_test, y_pred)) 

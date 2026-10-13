@@ -8,21 +8,26 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 
-df = pd.read_csv("C:\\Users\\VARUN-LAP\\OneDrive\\Dokumen\\iris.csv")
+df = pd.read_csv("C:/Users/VARUN-LAP/OneDrive/Dokumen/iris.csv")    
 
-X = df.drop('variety', axis=1)
+x = df.drop('variety', axis=1)
 y = df['variety']
 
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=0
-)
+X_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=0)
 
 dt = DecisionTreeClassifier(criterion='entropy')
 
 dt.fit(X_train, y_train)
 
-y_pred = dt.predict(X_test)
+y_pred = dt.predict(x_test)
 
 accuracy = accuracy_score(y_test, y_pred)
-print("Accuracy:", accuracy)
+print("accuracy is",accuracy)
+
+
+
+
+
+
+
 
